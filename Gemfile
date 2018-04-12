@@ -1,5 +1,4 @@
 source 'https://rubygems.org' do
   gem 'sinatra'
-  gem 'unirest'
-  gem 'rubyjokes'
+  gem 'chuck_norris'
 end
