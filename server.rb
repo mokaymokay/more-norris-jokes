@@ -17,11 +17,10 @@ get '/:type' do
     random = rand(10)
     if random > 4
       @random_joke = ChuckNorris::JokeFinder.find_joke('random?limitTo=[nerdy]').joke
-      erb :surprise
     else
       @random_joke = ChuckNorris::JokeFinder.find_joke('random?limitTo=[explicit]').joke
-      erb :surprise
     end
+    erb :surprise
   else
     redirect to('/')
   end
