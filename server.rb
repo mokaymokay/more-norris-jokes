@@ -23,11 +23,6 @@ get '/:type' do
       erb :surprise
     end
   else
-    'this page does not exist'
+    redirect to('/')
   end
 end
-
-# get '/surprise' do
-#   @random_joke = ChuckNorris::JokeFinder.get_joke.joke
-#   erb :surprise
-# end
